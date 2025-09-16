@@ -1,68 +1,137 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn the best practices of HTML5 with a semantic structure, accessibility, and SEO-friendly content." />
-  <meta name="keywords" content="HTML5, Semantic HTML, Accessibility, SEO, Web Development" />
-  <meta name="author" content="Serfine" />
-  <title>Semantic HTML Web Page Example</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="An introduction to HTML5 with semantic structure, accessibility, and SEO best practices.">
+	<title>Introduction to HTML5</title>
 </head>
 <body>
+	<header>
+		<nav aria-label="Main Navigation">
+			<ul>
+				<li><a href="#main-content">Skip to Content</a></li>
+			</ul>
+		</nav>
+		<h1>Introduction to HTML5</h1>
+	</header>
+	<main id="main-content">
+		<section aria-labelledby="about-html5">
+			<h2 id="about-html5">What is HTML5?</h2>
+			<p>HTML5 is the latest version of the HyperText Markup Language, the standard language for creating web pages and applications.</p>
+		</section>
+		<section aria-labelledby="features">
+			<h2 id="features">Key Features of HTML5</h2>
+			<article aria-labelledby="semantics">
+				<h3 id="semantics">Semantic Elements</h3>
+				<p>HTML5 introduces new semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> to improve document structure and accessibility.</p>
+			</article>
+			<article aria-labelledby="accessibility">
+				<h3 id="accessibility">Accessibility</h3>
+				<p>Using proper tags, ARIA attributes, and logical heading order helps make web content accessible to all users, including those using assistive technologies.</p>
+			</article>
+			<article aria-labelledby="seo">
+				<h3 id="seo">SEO Best Practices</h3>
+				<p>Semantic HTML and descriptive metadata improve search engine optimization, making content easier to find and understand.</p>
+			</article>
+		</section>
+	</main>
+</main>
+	<footer>
+		<!-- Footer content can go here if needed -->
+	</footer>
+</main>
 
-  <header>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="#about" aria-label="Learn more about this page">About</a></li>
-        <li><a href="#features" aria-label="See the features">Features</a></li>
-        <li><a href="#contact" aria-label="Contact us">Contact</a></li>
-      </ul>
-    </nav>
-    <h1>Welcome to Our Semantic HTML5 Example</h1>
-  </header>
+<section aria-labelledby="contact">
+	<h2 id="contact">Contact Us</h2>
+	<form aria-label="Contact Form">
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required aria-required="true">
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required aria-required="true">
+		</div>
+		<div>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+		</div>
+		<button type="submit">Send</button>
+	</form>
+</section>
 
-  <main>
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About This Page</h2>
-      <p>This page demonstrates the use of semantic HTML5 elements, accessibility enhancements, and SEO-friendly practices. It uses clear headings, organized content, and proper HTML structure for readability and usability.</p>
-    </section>
+<section aria-labelledby="sample-table">
+	<h2 id="sample-table">Sample Table</h2>
+	<table>
+		<caption>HTML5 Elements Overview</caption>
+		<thead>
+			<tr>
+				<th scope="col">Element</th>
+				<th scope="col">Purpose</th>
+				<th scope="col">Example Usage</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>&lt;header&gt;</td>
+				<td>Defines introductory content or navigation links</td>
+				<td><code>&lt;header&gt;...&lt;/header&gt;</code></td>
+			</tr>
+			<tr>
+				<td>&lt;nav&gt;</td>
+				<td>Contains navigation links</td>
+				<td><code>&lt;nav&gt;...&lt;/nav&gt;</code></td>
+			</tr>
+			<tr>
+				<td>&lt;main&gt;</td>
+				<td>Specifies the main content of a document</td>
+				<td><code>&lt;main&gt;...&lt;/main&gt;</code></td>
+			</tr>
+			<tr>
+				<td>&lt;section&gt;</td>
+				<td>Defines a section in a document</td>
+				<td><code>&lt;section&gt;...&lt;/section&gt;</code></td>
+			</tr>
+			<tr>
+				<td>&lt;article&gt;</td>
+				<td>Represents an independent piece of content</td>
+				<td><code>&lt;article&gt;...&lt;/article&gt;</code></td>
+			</tr>
+			<tr>
+				<td>&lt;aside&gt;</td>
+				<td>Contains content indirectly related to the main content</td>
+				<td><code>&lt;aside&gt;...&lt;/aside&gt;</code></td>
+			</tr>
+			<tr>
+				<td>&lt;footer&gt;</td>
+				<td>Defines footer for a document or section</td>
+				<td><code>&lt;footer&gt;...&lt;/footer&gt;</code></td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<div style="text-align:center; font-size:0.9em; color:#666; margin-top:2em;">
+	&copy; 2025 Introduction to HTML5. All rights reserved.
+</div>
 
-    <section id="features" aria-labelledby="features-heading">
-      <h2 id="features-heading">Key Features</h2>
-      <article>
-        <h3>Semantic HTML Elements</h3>
-        <p>Tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> are used to define the document structure.</p>
-      </article>
-      <article>
-        <h3>Accessibility</h3>
-        <p>ARIA labels, meaningful headings, and proper link descriptions enhance accessibility for screen readers.</p>
-      </article>
-      <article>
-        <h3>SEO Optimization</h3>
-        <p>Metadata, meaningful headings, and keyword-rich content help search engines index the page effectively.</p>
-      </article>
-    </section>
+<button id="back-to-top" style="position:fixed;bottom:20px;right:20px;display:none;" aria-label="Back to top">⬆️ Top</button>
 
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact Us</h2>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required aria-required="true" />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required aria-required="true" />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Semantic HTML Example. All rights reserved.</p>
-  </footer>
-
+<script>
+// Show/hide back to top button
+const backToTopBtn = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+	if (window.scrollY > 200) {
+		backToTopBtn.style.display = 'block';
+	} else {
+		backToTopBtn.style.display = 'none';
+	}
+});
+backToTopBtn.addEventListener('click', () => {
+	window.scrollTo({ top: 0, behavior: 'smooth' });
+	backToTopBtn.blur();
+});
+</script>
 </body>
 </html>
